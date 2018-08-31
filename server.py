@@ -8,7 +8,7 @@ HOST_NAME = 'localhost'  # Aqui vai o ip do servidor
 PORT_NUMBER = 64000      # Aqui vai a porta
 
 
-class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler): 
+class Handler(BaseHTTPServer.BaseHTTPRequestHandler): 
 
     def do_GET(s):
                                         
@@ -31,7 +31,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
 if __name__ == '__main__':    
 
-    httpd = BaseHTTPServer.HTTPServer((HOST_NAME, PORT_NUMBER), MyHandler)
+    httpd = BaseHTTPServer.HTTPServer((HOST_NAME, PORT_NUMBER), Handler)
  
     try:     
         httpd.serve_forever()  
