@@ -1,6 +1,6 @@
 #Client
 
-import requests     # Requer instalacao via comando 'pip install requests'
+import requests     # Requer instalação via comando 'pip install requests'
 import subprocess 
 import time
 import os
